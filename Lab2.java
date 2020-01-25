@@ -76,15 +76,15 @@ public class Lab2
 
     public static void firstchecker()
     {
-        //pre:
-        //post:
+        //pre: Robot is facing upwards on an empty collumn. 
+        //post: Robot is on top of the now checkered row.
         Robot.makeDark(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move();
     }
 
     public static void secondchecker()
     {
-        //pre:
-        //post:
+        //pre: Robot is to the the side of the next row and facing upwards.
+        //post: Robot is on the bottom of an empty row, facing upwards.
         turnRight(); Robot.move(); Robot.makeDark(); turnRight(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move(); Robot.move(); Robot.makeDark(); Robot.move(); Robot.turnLeft();
         if (Robot.frontIsClear())
         {
